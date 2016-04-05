@@ -10,7 +10,17 @@ namespace mysnake
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world!");
+            int x1 = 1;
+            int y1 = 3;
+            char symbol = '*';
+            Draw(x1, y1, symbol);
+            Console.ReadLine();
+        }
+
+        static void Draw(int x, int y, char symbol)
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(symbol);
         }
     }
 }
